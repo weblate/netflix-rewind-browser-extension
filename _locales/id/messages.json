@@ -1,1 +1,108 @@
-{}
+{
+  "extensionName": {
+    "message": "Netflix Mundur 1 detik"
+  },
+  "extensionDescription": {
+    "message": "Lompat video dengan sejumlah detik (dapat disesuaikan)"
+  },
+  "debugPluginLoaded": {
+    "message": "Plugin '$EXTENSIONNAME$' dimuat.",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "debugCouldNotLoadSettings": {
+    "message": "Tidak dapat memuat pengaturan untuk $EXTENSIONNAME$, kembali ke bawaan…",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Opsi untuk $EXTENSIONNAME$",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsKeyboardControlsRewind": {
+    "message": "Gunakan $BTN1$ untuk mundur $SECONDS$ detik",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-rewind-sec>1</span>"
+      }
+    }
+  },
+  "optionsKeyboardControlsForward": {
+    "message": "Gunakan $BTN1$ untuk maju $SECONDS$ detik",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-forward-btn>&gt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-forward-sec>5</span>"
+      }
+    }
+  },
+  "optionsCustomizationIntroduction": {
+    "message": "Anda dapat mengubah jumlah detik untuk mundur/maju, dan memodifikasi tombol yang digunakan."
+  },
+  "optionsNoteNetflixDefaults": {
+    "message": "Nilai lompat bawaan di Netflix adalah 10 detik."
+  },
+  "optionsPermissionError": {
+    "message": "Ekstensi memerlukan izin untuk mengakses domain Netflix.com.<br>Harap berikan izin di pengaturan peramban."
+  },
+  "optionsRequestPermission": {
+    "message": "Minta izin"
+  },
+  "optionsForwardSeconds": {
+    "message": "Detik maju"
+  },
+  "optionsRewindSeconds": {
+    "message": "Detik mundur"
+  },
+  "optionsRewindKey": {
+    "message": "Tombol mundur"
+  },
+  "optionsForwardKey": {
+    "message": "Tombol maju"
+  },
+  "optionsResetToDefaults": {
+    "message": "Atur ulang ke bawaan"
+  },
+  "optionsDefaultsSaved": {
+    "message": "Bawaan disimpan!"
+  },
+  "optionsSave": {
+    "message": "Simpan"
+  },
+  "optionsSaved": {
+    "message": "Disimpan!"
+  },
+  "optionsSourceCode": {
+    "message": "Kode sumber"
+  },
+  "optionsTranslate": {
+    "message": "Bantu terjemahkan ekstensi ini"
+  },
+  "optionsReportIssue": {
+    "message": "Laporkan masalah"
+  },
+  "optionsRequestFeature": {
+    "message": "Minta fitur"
+  },
+  "optionsDonate": {
+    "message": "Belikan saya kopi"
+  }
+}
