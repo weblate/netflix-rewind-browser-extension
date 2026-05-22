@@ -1,1 +1,108 @@
-{}
+{
+  "extensionName": {
+    "message": "Netflix Rewind 1 sec."
+  },
+  "extensionDescription": {
+    "message": "Muévete por el vídeo una cantidad x de segundos (ajustable)"
+  },
+  "debugPluginLoaded": {
+    "message": "'$EXTENSIONNAME$' plugin cargado.",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "debugCouldNotLoadSettings": {
+    "message": "No ha sido posible cargar la configuración de $EXTENSIONNAME$, volviendo a los ajustes predeterminados…",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Opciones de $EXTENSIONNAME$",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsKeyboardControlsRewind": {
+    "message": "Usa $BTN1$ para rebobinar $SECONDS$ segundos",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-rewind-sec>1</span>"
+      }
+    }
+  },
+  "optionsKeyboardControlsForward": {
+    "message": "Usa $BTN1$ para avanzar $SECONDS$ segundos",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-forward-btn>&gt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-forward-sec>5</span>"
+      }
+    }
+  },
+  "optionsCustomizationIntroduction": {
+    "message": "Puedes cambiar el número de segundos de avance/rebobinado, y ajustar las teclas para ello."
+  },
+  "optionsNoteNetflixDefaults": {
+    "message": "Netflix avanza y retrocede 10 segundos por defecto."
+  },
+  "optionsPermissionError": {
+    "message": "Esta extensión necesita tener acceso al dominio netflix.com.<br>Dale estos permisos en la configuración del navegador."
+  },
+  "optionsRequestPermission": {
+    "message": "Solicitud de permisos"
+  },
+  "optionsForwardSeconds": {
+    "message": "Segundos de avance"
+  },
+  "optionsRewindSeconds": {
+    "message": "Segundos de rebobinado"
+  },
+  "optionsRewindKey": {
+    "message": "Tecla de rebobinado"
+  },
+  "optionsForwardKey": {
+    "message": "Tecla de avance"
+  },
+  "optionsResetToDefaults": {
+    "message": "Volver a los ajustes predeterminados"
+  },
+  "optionsDefaultsSaved": {
+    "message": "Ajustes predeterminados guardados!"
+  },
+  "optionsSave": {
+    "message": "Guardar"
+  },
+  "optionsSaved": {
+    "message": "Guardado!"
+  },
+  "optionsSourceCode": {
+    "message": "Código fuente"
+  },
+  "optionsTranslate": {
+    "message": "Ayuda a traducir esta extensión"
+  },
+  "optionsReportIssue": {
+    "message": "Informar de un problema"
+  },
+  "optionsRequestFeature": {
+    "message": "Sugerir nuevas funciones"
+  },
+  "optionsDonate": {
+    "message": "Invítame a un café"
+  }
+}

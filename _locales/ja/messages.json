@@ -1,1 +1,108 @@
-{}
+{
+  "extensionDescription": {
+    "message": "動画にｘ秒（設定可能）移動する"
+  },
+  "debugPluginLoaded": {
+    "message": "'$EXTENSIONNAME$' プラグインが読み込まれました.",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsTranslate": {
+    "message": "この拡張機能の翻訳を手伝う"
+  },
+  "extensionName": {
+    "message": "ネットフリックス（Netflix）リワインド１秒"
+  },
+  "debugCouldNotLoadSettings": {
+    "message": "$EXTENSIONNAME$の設定が読み込まれなかった、デフォルトに戻す中…",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "$EXTENSIONNAME$設定",
+    "placeholders": {
+      "extensionname": {
+        "content": "$1",
+        "example": "Netflix Rewind 1 sec"
+      }
+    }
+  },
+  "optionsKeyboardControlsRewind": {
+    "message": "$BTN1$を使って$SECONDS$秒を巻き戻す",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-rewind-sec>1</span>"
+      }
+    }
+  },
+  "optionsKeyboardControlsForward": {
+    "message": "$BTN1$を使って$SECONDS$秒を進める",
+    "placeholders": {
+      "btn1": {
+        "content": "<kbd data-forward-btn>&gt;</kbd>"
+      },
+      "seconds": {
+        "content": "<span data-forward-sec>5</span>"
+      }
+    }
+  },
+  "optionsCustomizationIntroduction": {
+    "message": "進める／巻き戻す秒数や割り当てるキーを調整可能。"
+  },
+  "optionsNoteNetflixDefaults": {
+    "message": "Netflixではデフォルトで10秒ずつスキップします。"
+  },
+  "optionsPermissionError": {
+    "message": "この拡張機能はNetflix.comへの許可が必要です。ブラウザ設定で与えてください。"
+  },
+  "optionsRequestPermission": {
+    "message": "許可依頼"
+  },
+  "optionsForwardSeconds": {
+    "message": "進める秒数"
+  },
+  "optionsRewindSeconds": {
+    "message": "巻き戻す秒数"
+  },
+  "optionsRewindKey": {
+    "message": "巻き戻すキー"
+  },
+  "optionsForwardKey": {
+    "message": "進めるキー"
+  },
+  "optionsResetToDefaults": {
+    "message": "デフォルトリセット"
+  },
+  "optionsDefaultsSaved": {
+    "message": "デフォルト設定が保存されました！"
+  },
+  "optionsSave": {
+    "message": "保存する"
+  },
+  "optionsSaved": {
+    "message": "保存しました！"
+  },
+  "optionsSourceCode": {
+    "message": "ソースコード"
+  },
+  "optionsReportIssue": {
+    "message": "不具合を報告する"
+  },
+  "optionsRequestFeature": {
+    "message": "フィーチャーを依頼する"
+  },
+  "optionsDonate": {
+    "message": "コーヒーを奢ってあげる"
+  }
+}
