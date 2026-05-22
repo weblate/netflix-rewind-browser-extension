@@ -50,3 +50,7 @@ Pack the extension as a `.zip` file and upload it to the Chrome Web Store.
 See https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/ for information about the `web-ext` command.
 
 https://stackoverflow.com/questions/42105028/netflix-video-player-in-chrome-how-to-seek/47786376#47786376
+
+---
+
+<a href='https://ko-fi.com/L3L0BR8QG' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
