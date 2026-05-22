@@ -36,10 +36,10 @@
     "message": "Gunakan $BTN1$ untuk mundur $SECONDS$ detik",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+        "content": "[REWIND_BTN]"
       },
       "seconds": {
-        "content": "<span data-rewind-sec>1</span>"
+        "content": "[REWIND_SEC]"
       }
     }
   },
@@ -47,10 +47,10 @@
     "message": "Gunakan $BTN1$ untuk maju $SECONDS$ detik",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-forward-btn>&gt;</kbd>"
+        "content": "[FORWARD_BTN]"
       },
       "seconds": {
-        "content": "<span data-forward-sec>5</span>"
+        "content": "[FORWARD_SEC]"
       }
     }
   },

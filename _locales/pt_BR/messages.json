@@ -22,10 +22,10 @@
     "description": "Description for the keyboard controls to rewind.",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+        "content": "[REWIND_BTN]"
       },
       "seconds": {
-        "content": "<span data-rewind-sec>1</span>"
+        "content": "[REWIND_SEC]"
       }
     }
   },
@@ -70,10 +70,10 @@
     "description": "Description for the keyboard controls to seek forward.",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-forward-btn>&gt;</kbd>"
+        "content": "[FORWARD_BTN]"
       },
       "seconds": {
-        "content": "<span data-forward-sec>5</span>"
+        "content": "[FORWARD_SEC]"
       }
     }
   },

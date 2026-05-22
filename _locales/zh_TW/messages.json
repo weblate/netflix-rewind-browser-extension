@@ -24,10 +24,10 @@
     "message": "使用 $BTN1$ 快進 $SECONDS$ 秒",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-forward-btn>&gt;</kbd>"
+        "content": "[FORWARD_BTN]"
       },
       "seconds": {
-        "content": "<span data-forward-sec>5</span>"
+        "content": "[FORWARD_SEC]"
       }
     }
   },
@@ -86,10 +86,10 @@
     "message": "使用 $BTN1$ 倒退 $SECONDS$ 秒",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+        "content": "[REWIND_BTN]"
       },
       "seconds": {
-        "content": "<span data-rewind-sec>1</span>"
+        "content": "[REWIND_SEC]"
       }
     }
   },

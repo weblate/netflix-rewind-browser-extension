@@ -39,10 +39,10 @@
     "message": "$BTN1$を使って$SECONDS$秒を巻き戻す",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+        "content": "[REWIND_BTN]"
       },
       "seconds": {
-        "content": "<span data-rewind-sec>1</span>"
+        "content": "[REWIND_SEC]"
       }
     }
   },
@@ -50,10 +50,10 @@
     "message": "$BTN1$を使って$SECONDS$秒を進める",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-forward-btn>&gt;</kbd>"
+        "content": "[FORWARD_BTN]"
       },
       "seconds": {
-        "content": "<span data-forward-sec>5</span>"
+        "content": "[FORWARD_SEC]"
       }
     }
   },

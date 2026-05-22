@@ -36,10 +36,10 @@
     "message": "$SECONDS$ வினாடிகளுடன் முன்னாடி வைக்க $BTN1$ ஐப் பயன்படுத்தவும்",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-rewind-btn>&lt;</kbd>"
+        "content": "[REWIND_BTN]"
       },
       "seconds": {
-        "content": "<span data-rewind-sec>1</span>"
+        "content": "[REWIND_SEC]"
       }
     }
   },
@@ -47,10 +47,10 @@
     "message": "$SECONDS$ வினாடிகளுடன் முன்னோக்கிச் செல்ல $BTN1$ ஐப் பயன்படுத்தவும்",
     "placeholders": {
       "btn1": {
-        "content": "<kbd data-forward-btn>&gt;</kbd>"
+        "content": "[FORWARD_BTN]"
       },
       "seconds": {
-        "content": "<span data-forward-sec>5</span>"
+        "content": "[FORWARD_SEC]"
       }
     }
   },

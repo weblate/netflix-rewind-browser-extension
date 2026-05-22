@@ -81,18 +81,63 @@ function checkPermission() {
 
 checkPermission();
 
-function replaceTemplate(id, data) {
-  if (document.getElementById(id) === null) return;
-  document.getElementById(id).innerHTML = document.getElementById(id).innerHTML
-    .replace(
-      /%(\w*)%/g, // replaces %key% with property from data object
-      function (_, key) {
-        return data.hasOwnProperty(key) ? data[key] : "";
-      }
+/** Matches the `%key%` template syntax used in options.html. */
+const TEMPLATE_RE = /%(\w+)%/g;
+/** Matches every char that has special meaning inside a RegExp pattern. */
+const REGEX_META_RE = /[.*+?^${}()|[\]\\]/g;
+/** Backslash-escapes regex metacharacters so it can be safely used inside a `new RegExp()` pattern. */
+const escapeForRegex = (s) => s.replace(REGEX_META_RE, '\\$&');
+
+function applyI18n() {
+  const root = document.getElementById("wrapper");
+  if (!root) return;
+
+  const markerRe = new RegExp(`(${Object.keys(i18nMarkers).map(escapeForRegex).join('|')})`);
+
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+  let node;
+  while ((node = walker.nextNode())) textNodes.push(node);
+
+  for (const textNode of textNodes) {
+    const expanded = textNode.nodeValue.replace(TEMPLATE_RE, (_, key) =>
+      Object.prototype.hasOwnProperty.call(i18nData, key) ? i18nData[key] : ''
     );
+
+    if (!markerRe.test(expanded)) {
+      textNode.nodeValue = expanded;
+      continue;
+    }
+
+    const parent = textNode.parentNode;
+    const next = textNode.nextSibling;
+    parent.removeChild(textNode);
+    for (const part of expanded.split(markerRe)) {
+      if (i18nMarkers[part]) {
+        parent.insertBefore(i18nMarkers[part](), next);
+      } else if (part) {
+        parent.insertBefore(document.createTextNode(part), next);
+      }
+    }
+  }
 }
 
-replaceTemplate("wrapper", i18nData);
+function makeMarkerEl(tag, attr, text) {
+  const el = document.createElement(tag);
+  el.setAttribute(attr, '');
+  el.textContent = text;
+  return el;
+}
+
+const i18nMarkers = {
+  '[REWIND_BTN]': () => makeMarkerEl('kbd', 'data-rewind-btn', '<'),
+  '[FORWARD_BTN]': () => makeMarkerEl('kbd', 'data-forward-btn', '>'),
+  '[REWIND_SEC]': () => makeMarkerEl('span', 'data-rewind-sec', String(defaults.rewindSec)),
+  '[FORWARD_SEC]': () => makeMarkerEl('span', 'data-forward-sec', String(defaults.seekForwardSec)),
+  '<br>': () => document.createElement('br'),
+};
+
+applyI18n();
 
 function setKeyInputValue(keyObject, type) {
   const modifierShift = keyObject.shiftKey && keyObject.key !== "Shift";
