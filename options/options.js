@@ -101,7 +101,7 @@ function setKeyInputValue(keyObject, type) {
   const modifierMeta = keyObject.metaKey && keyObject.key !== "Meta";
   const allModifierStrings = `${modifierShift ? "Shift + " : ""}${modifierAlt ? "Alt + " : ""}${modifierCtrl ? "Ctrl + " : ""}${modifierMeta ? "Meta + " : ""}`;
   document.querySelector(`#${type}-key`).value = `${allModifierStrings}[${keyObject.code}]`;
-  document.querySelector(`[data-${type}-btn]`).innerHTML = `${allModifierStrings}${keyObject.key} (${keyObject.code})`;
+  document.querySelector(`[data-${type}-btn]`).textContent = `${allModifierStrings}${keyObject.key} (${keyObject.code})`;
 }
 
 function modifyKey(e, type) {
